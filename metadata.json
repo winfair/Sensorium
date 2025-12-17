@@ -1,0 +1,9 @@
+{
+  "name": "Sensorium",
+  "description": "A comprehensive sensor dashboard visualizing data from your device's accelerometer, gyroscope, GPS, camera, and microphone. Optimized for iOS and macOS devices.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}

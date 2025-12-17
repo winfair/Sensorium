@@ -1,11 +1,32 @@
-<div align="center">
+# Sensorium
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Sensorium is a comprehensive sensor dashboard visualizing real-time data from your device's hardware. It is optimized for iOS and macOS devices, providing insights into motion, orientation, location, and system status through a modern, Apple-inspired interface.
 
-  <h1>Built with AI Studio</h2>
+## Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Motion & Accelerometer**: Real-time visualization of 3-axis acceleration and gravity data using responsive charts.
+- **Gyroscope & Compass**: 3D orientation tracking and true magnetic compass heading (supports iOS `webkitCompassHeading`).
+- **Geolocation**: High-accuracy GPS coordinates, altitude, speed, and heading tracking.
+- **Media Hardware**: Detection and live preview of camera and microphone inputs.
+- **System Status**: Real-time monitoring of battery level, charging status, network connection type, and hardware concurrency.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Technologies
 
-</div>
+- **React 19**: Core UI library.
+- **Tailwind CSS**: Utility-first styling for the iOS-like aesthetic.
+- **Recharts**: Performance-optimized data visualization for sensor streams.
+- **Lucide React**: Clean, consistent iconography.
+- **Native Web APIs**: Direct integration with `DeviceMotionEvent`, `DeviceOrientationEvent`, `Navigator.geolocation`, and `Navigator.mediaDevices`.
+
+## Getting Started
+
+This application requires a secure context (**HTTPS**) to access most device sensors (Camera, Microphone, Geolocation, Orientation).
+
+1. Clone the repository.
+2. Serve the directory using any static web server.
+3. Open on a mobile device (iOS/Safari recommended for full sensor support).
+4. Grant permissions when prompted to enable sensor data streams.
+
+## Privacy
+
+All data is processed strictly locally on the client device. No sensor data is collected, stored, or transmitted to external servers.
